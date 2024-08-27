@@ -1,5 +1,5 @@
 
-cd "C:\BaiduNetdiskDownload\论文学习\stata\BGY DATA\4. Tobit regression"
+cd "C:\.."
 	*********************************************
 	* After UMAP we process the Tobit regression * 
 	*********************************************
@@ -26,7 +26,7 @@ logout,save(共线性)word replace: estat vif
 **********VIF******************
 
 	*********************************************
-	* PCA method * 结论是KMO小于0.5 放弃本方法
+	* PCA method *
 	*********************************************
 pca $xlist2 , comp(8) vce(normal)
 estat anti
